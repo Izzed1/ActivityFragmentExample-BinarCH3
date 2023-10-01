@@ -50,7 +50,7 @@ class FragmentTwo : Fragment() {
     private fun showProfileData() {
         if (person != null) {
             binding.llProfile.isVisible = true
-            binding.ivProfileImg.load(person?.profilePicUrl) // load merupakan dari library coil, untuk ambil gambar dr internet
+            binding.ivProfileImg.load(person?.profilePictUrl) // load merupakan dari library coil, untuk ambil gambar dr internet
             binding.tvProfileDesc.text = person?.profileDesc
             binding.tvName.text = person?.name
             binding.tvJob.text = person?.job

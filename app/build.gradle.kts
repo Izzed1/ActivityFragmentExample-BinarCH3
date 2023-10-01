@@ -51,9 +51,15 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     // navigation fragment
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.2")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.2")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.3")
 
-    // coil: memuat gambar dari internet
+    // image loader from network
     implementation("io.coil-kt:coil:2.4.0")
+
+    // RV
+    implementation("androidx.recyclerview:recyclerview:1.3.1")
+
+    // fragment ktx
+    implementation("androidx.fragment:fragment-ktx:1.6.1")
 }

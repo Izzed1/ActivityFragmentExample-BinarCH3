@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/fragmentOne">
+    app:startDestination="@id/avengerList">
 
     <fragment
-        android:id="@+id/fragmentOne"
-        android:name="com.unissula.activityfragmentexample.presentation.fragmentone.FragmentOne"
-        android:label="fragment_one"
-        tools:layout="@layout/fragment_one" >
+        android:id="@+id/avengerList"
+        android:name="com.unissula.activityfragmentexample.presentation.avengerlist.AvengerListFragment"
+        android:label="avenger_list"
+        tools:layout="@layout/fragment_avenger_list" >
         <action
-            android:id="@+id/action_fragmentOne_to_fragmentTwo"
+            android:id="@+id/navigateToDetail"
             app:destination="@id/fragmentTwo" />
     </fragment>
     <fragment
