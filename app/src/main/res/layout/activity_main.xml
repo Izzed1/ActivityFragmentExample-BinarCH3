@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_host_fragment"
+    android:name="androidx.navigation.fragment.NavHostFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".presentation.main.MainActivity">
-
-<!--    Cara 1 menggunakan fragment text XML-->
-
-    <fragment
-        android:id="@+id/fragmentOne"
-        android:name="com.unissula.activityfragmentexample.presentation.fragmentone.FragmentOne"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <fragment
-        android:id="@+id/fragmentTwo"
-        android:name="com.unissula.activityfragmentexample.presentation.fragmenttwo.FragmentTwo"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <fragment
-        android:id="@+id/fragmentThree"
-        android:name="com.unissula.activityfragmentexample.presentation.fragmentthree.FragmentThree"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-</LinearLayout>
+    app:defaultNavHost="true"
+    app:navGraph="@navigation/main_nav_graph"
+    tools:context=".presentation.main.MainActivity" />
